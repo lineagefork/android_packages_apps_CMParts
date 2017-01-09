@@ -41,4 +41,7 @@
     <string name="double_tap_sleep_anywhere_title">Tap to sleep</string>
     <string name="double_tap_sleep_anywhere_summary">Double-tap anywhere on the lockscreen to put device asleep</string>
 
+    <!-- Pa Battery -->
+    <string name="status_bar_battery_style_solid">Solid</string>
+
 </resources>
