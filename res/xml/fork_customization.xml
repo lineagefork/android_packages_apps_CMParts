@@ -27,4 +27,10 @@
         android:title="@string/force_expanded_notifications_title"
         android:summary="@string/force_expanded_notifications_summary" />
 
+    <!-- Sound -->
+    <PreferenceScreen
+        android:key="sound_category"
+        android:title="@string/sound_title" 
+        android:fragment="org.cyanogenmod.cmparts.fork.SoundSettings" />
+
 </PreferenceScreen>
