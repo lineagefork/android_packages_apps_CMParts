@@ -159,6 +159,29 @@
                 android:value="profiles_settings" />
         </activity-alias>
 
+        <activity-alias
+            android:name=".fork.ForkCustomization"
+            android:label="@string/fork_customization_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter android:priority="2">
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <action android:name="org.cyanogenmod.cmparts.FORK_CUSTOMIZATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.personal" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_fork_customization" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.receiver"
+                android:value="org.cyanogenmod.cmparts.PartsUpdater" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.key"
+                android:value="fork_customization" />
+        </activity-alias>
+
         <!-- Status bar settings (dashboard) -->
         <activity-alias
             android:name=".statusbar.StatusBarSettings"
