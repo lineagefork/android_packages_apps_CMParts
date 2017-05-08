@@ -10,23 +10,22 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/fork_customization_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    android:key="fork_customization"
+    android:title="@string/fork_customization_title">
 
     <PreferenceCategory
         android:key="notifications_qs"
         android:title="@string/fork_notification_category">
 
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+    <cyanogenmod.preference.SystemSettingSwitchPreference
         android:key="quick_settings_vibrate"
         android:title="@string/quick_settings_vibrate_title"
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false"/>
 
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+    <cyanogenmod.preference.SystemSettingSwitchPreference
         android:key="force_expanded_notifications"
         android:title="@string/force_expanded_notifications_title"
         android:summary="@string/force_expanded_notifications_summary" />
@@ -37,19 +36,19 @@
         android:key="lockscreen"
         android:title="@string/fork_lockscreen_category">
 
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+    <cyanogenmod.preference.SystemSettingSwitchPreference
         android:key="lockscreen_media_metadata"
         android:title="@string/media_art_title"
         android:summary="@string/media_art_summary"
         android:defaultValue="true" />
 
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+    <cyanogenmod.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_anywhere"
         android:title="@string/double_tap_sleep_anywhere_title"
         android:summary="@string/double_tap_sleep_anywhere_summary"
         android:defaultValue="false" />
 
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+    <cyanogenmod.preference.SystemSettingSwitchPreference
         android:key="lockscreen_enable_power_menu"
         android:title="@string/lockscreen_enable_power_menu_title"
         android:summary="@string/lockscreen_enable_power_menu_summary"
