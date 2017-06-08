@@ -194,7 +194,7 @@
   <string name="volume_answer_call_title">Anruf annehmen</string>
   <string name="volume_answer_call_summary">Eingehende Anrufe durch Drücken der Lautstärketaste annehmen</string>
   <string name="home_answer_call_title">Anruf beantworten</string>
-  <string name="home_answer_call_summary">Eingehende Anrufe durch Drücken der Lautstärketaste annehmen</string>
+  <string name="home_answer_call_summary">Eingehende Anrufe durch Drücken der Home-Taste annehmen</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Hintergrundbeleuchtung</string>
   <string name="button_backlight_enabled">Tasten beleuchten</string>
@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Aus</string>
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
-  <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
-  <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
   <string name="status_bar_double_tap_to_sleep_title">Display ausschalten durch doppeltes Tippen</string>
   <string name="status_bar_double_tap_to_sleep_summary">Doppelt auf die Statusleiste tippen, um das Display auszuschalten</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Ausgeblendet</string>
   <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
   <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Helligkeit</string>
+  <string name="status_bar_brightness_slider_title">Helligkeitsregler</string>
+  <string name="status_bar_brightness_slider_summary">Helligkeit in den Schnelleinstellungen anpassen</string>
+  <string name="status_bar_brightness_slider_auto_title">Automatische Helligkeit</string>
+  <string name="status_bar_brightness_slider_auto_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
+  <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
+  <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Statusleistensymbole</string>
   <string name="status_bar_icons_summary">Festlegen, welche Statusleistensymbole angezeigt werden</string>
