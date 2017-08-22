@@ -11,6 +11,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
+import org.cyanogenmod.cmparts.widget.SeekBarPreference;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
@@ -26,5 +27,22 @@ public class ForkCustomization extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.fork_customization);
+
+        mScreenshotDelay = (SeekBarPreference) findPreference(SCREENSHOT_DELAY);
+        int screenshotDelay = Settings.System.getInt(resolver,
+                Settings.System.SCREENSHOT_DELAY, 1000);
+        mScreenshotDelay.setValue(screenshotDelay / 1);
+        mScreenshotDelay.setOnPreferenceChangeListener(this);
+    }
+
+
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mScreenshotDelay) {
+            int screenshotDelay = (Integer) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SCREENSHOT_DELAY, screenshotDelay * 1);
+            return true;
+        }
+        return false;
     }
 }
