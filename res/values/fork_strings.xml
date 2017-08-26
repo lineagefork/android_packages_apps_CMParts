@@ -19,9 +19,8 @@
 
     <string name="fork_customization_title">Fork Customization</string>
     <string name="fork_lockscreen_category">Lockscreen</string>
-    <string name="fork_notification_category">Notifications and Quick settings</string>
+    <string name="fork_notification_category">Notifications and Quick Settings</string>
     <string name="fork_recents_category">Recent apps</string>
-    <string name="fork_screenshot_options_category">Screenshot options</string>
 
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
@@ -57,10 +56,5 @@
     <string name="recents_clear_all_location_bottom_right">Bottom right</string>
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
-
-    <!-- Screenshot -->
-    <string name="screenshot_delay_title">Screenshot delay</string>
-    <string name="screenshot_delay_summary">Adjust the time for when a screenshot is captured</string>
-    <string name="screenshot_options_summary">Customize screenshot attributes like time, delay,type etc</string>
 
 </resources>

@@ -16,7 +16,7 @@
     android:title="@string/fork_customization_title">
 
     <PreferenceCategory
-        android:key="notification_settings"
+        android:key="notifications_qs"
         android:title="@string/fork_notification_category">
 
     <cyanogenmod.preference.SystemSettingSwitchPreference
@@ -33,7 +33,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="lockscreen_settings"
+        android:key="lockscreen"
         android:title="@string/fork_lockscreen_category">
 
     <cyanogenmod.preference.SystemSettingSwitchPreference
@@ -56,32 +56,9 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:key="screenshot_options_category"
-        android:title="@string/fork_screenshot_options_category">
-
-    <org.cyanogenmod.cmparts.fork.widget.SeekBarPreference
-        android:key="screenshot_delay"
-        android:title="@string/screenshot_delay_title"
-        android:summary="@string/screenshot_delay_summary"
-        settings:maximum="10000"
-        settings:minimum="100"
-        settings:interval="100"
-        settings:defaultVal="1000"
-        settings:units="ms"
-        android:persistent="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="recent_settings_category"
-        android:title="@string/fork_recents_category">
-
     <PreferenceScreen
         android:fragment="org.cyanogenmod.cmparts.fork.RecentSettings"
         android:key="fork_recents_settings"
         android:title="@string/fork_recents_category" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>
